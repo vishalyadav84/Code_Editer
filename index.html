@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="originMain">
+      <div class="showApp">
+        <!-- window of the app -->
+        <!-- note app structure -->
+        <div class="note commonApp">
+          <div class="navBar">
+            <div class="navAppLogo">
+              <div class="navImg" id="noteImg"></div>
+            </div>
+            <div class="navControl">
+              <div id="fullscreenNote" class="controlHover">
+                <i class="fa-solid fa-expand" style="color: #ffffff"></i>
+              </div>
+              <div id="closeNote" class="controlHover">
+                <i class="fa-solid fa-xmark" style="color: #ffffff"></i>
+              </div>
+            </div>
+          </div>
+          <div class="containerApp1">
+            <div class="tools">
+              <div class="color">
+                <h1 class="appName">Colors</h1>
+                <div class="colorPalate">
+                  <div class="red colorBox">
+                    <i
+                      class="fa-solid fa-circle"
+                      id="red"
+                      style="color: #fb0404"
+                    ></i>
+                  </div>
+                  <div class="yellow">
+                    <i
+                      class="fa-solid fa-circle"
+                      id="yellow"
+                      style="color: #f3fb04"
+                    ></i>
+                  </div>
+                  <div class="blue">
+                    <i
+                      class="fa-solid fa-circle"
+                      id="blue"
+                      style="color: #04a0fb"
+                    ></i>
+                  </div>
+                  <div class="green">
+                    <i
+                      class="fa-solid fa-circle"
+                      id="green"
+                      style="color: #00d307"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="brush">
+                <button class="eraser">
+                  <i class="fa-solid fa-eraser" style="color: #000000"></i>
+                </button>
+                <input type="range" id="brushSize" max="50" min="1" />
+              </div>
+              <div class="range">
+                <input type="color" id="colorRange" />
+                <button class="customColor">
+                  <i class="fa-solid fa-fill-drip" style="color: #000000"></i>
+                </button>
+              </div>
+            </div>
+
+            <button class="dropDown">
+              <i
+                class="fa-solid fa-arrow-up"
+                id="up"
+                style="color: #000000; display: none"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-down"
+                id="down"
+                style="color: #000000"
+              ></i>
+            </button>
+          </div>
+          <canvas></canvas>
+        </div>
+
+        <!-- music app structure -->
+        <div class="music commonApp commonAppM">
+          <div class="navBar">
+            <div class="navAppLogo">
+              <div class="navImg" id="musicImg"></div>
+            </div>
+            <div class="navControl">
+              <div id="fullscreenMusic" class="controlHover">
+                <i class="fa-solid fa-expand" style="color: #ffffff"></i>
+              </div>
+              <div id="closeMusic" class="controlHover">
+                <i class="fa-solid fa-xmark" style="color: #ffffff"></i>
+              </div>
+            </div>
+          </div>
+          <div class="musicmain">
+            <div class="musiccontainer">
+                <img src="Image/pngegg.png" alt="CD IMAGE" class="cd">
+                <input type="file" class="file">
+                <h2 class="audioTime">
+                    00:00
+                </h2>
+                <button class="openButton">OPEN</button>
+                <audio src="" ></audio>
+                <div class="controls">
+                    <!-- <div class="duration">
+                        <input type="range" id="myRange" class="slider" value="0" max="100" min="0">
+                    </div> -->
+    
+                    <div class="time">
+                        <div class="prev box">
+                            <i class="fa-solid fa-backward" style="color: #000000;"></i>
+                        </div>
+                        <div class="play box">
+                            <i class="fa-solid fa-play" style="color: #000000;"></i>
+                        </div>
+                        <div class="next box">
+                            <i class="fa-solid fa-forward" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- codeapp structure -->
+        <div class="codee commonApp commonAppC">
+          <div class="navBar">
+            <div class="navAppLogo">
+              <div class="navImg" id="codeImg"></div>
+            </div>
+            <div class="navControl">
+              <div id="fullscreenCode" class="controlHover">
+                <i class="fa-solid fa-expand" style="color: #ffffff"></i>
+              </div>
+              <div id="closeCode" class="controlHover">
+                <i class="fa-solid fa-xmark" style="color: #ffffff"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <header class="bHeader">
+              <div class="cpContainer">
+                <div class="cpImg">
+                  <i class="fa-brands fa-codepen" style="color: #ffffff"></i>
+                </div>
+                <div class="cpContainerContent">
+                  <h3>CodePen</h3>
+                  <p>Happy Coding</p>
+                </div>
+              </div>
+              <div class="cpHeaderButton">
+                <button class="headButton">
+                  <i class="fa-solid fa-cloud" style="color: #ffffff"></i>
+                  <p>Save</p>
+                </button>
+                <button class="headButton">
+                  <i class="fa-solid fa-gear" style="color: #ffffff"></i>
+                  <p>Setting</p>
+                </button>
+                <button class="headButton change">
+                  <i class="fa-solid fa-bolt" style="color: #ffffff"></i>
+                </button>
+                <button class="headButton signUp">SignUp</button>
+                <button class="headButton">Log In</button>
+              </div>
+            </header>
+
+            <main class="bMain">
+              <div class="html code">
+                <div class="codehead">
+                  <div class="alingLogo">
+                    <div class="logo">
+                      <i class="fa-brands fa-html5" style="color: #000000"></i>
+                    </div>
+                    <p>HTML</p>
+                  </div>
+                  <div class="settings">
+                    <div>
+                      <i class="fa-solid fa-gear" style="color: #ffffff"></i>
+                    </div>
+                  </div>
+                </div>
+                <textarea id="html"></textarea>
+              </div>
+              <div class="css code">
+                <div class="codehead">
+                  <div class="alingLogo">
+                    <div class="logo" id="css">
+                      <i
+                        class="fa-brands fa-css3-alt"
+                        style="color: #000000"
+                      ></i>
+                    </div>
+                    <p>CSS</p>
+                  </div>
+                  <div class="settings">
+                    <div>
+                      <i class="fa-solid fa-gear" style="color: #ffffff"></i>
+                    </div>
+                  </div>
+                </div>
+                <textarea id="csss"></textarea>
+              </div>
+              <div class="js code">
+                <div class="codehead">
+                  <div class="alingLogo">
+                    <div class="logo" id="js">
+                      <i class="fa-brands fa-js" style="color: #000000"></i>
+                    </div>
+                    <p>JS</p>
+                  </div>
+                  <div class="settings">
+                    <div>
+                      <i class="fa-solid fa-gear" style="color: #ffffff"></i>
+                    </div>
+                  </div>
+                </div>
+                <textarea id="jss"></textarea>
+              </div>
+            </main>
+
+            <footer class="bFooter">
+              <iframe class="output"></iframe>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="app" id="n1"></div>
+        <div class="app" id="n2"></div>
+        <div class="app" id="n3"></div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/0a8e467898.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

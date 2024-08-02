@@ -1,0 +1,525 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.originMain{
+    background-image: url(Image/vecteezy_minimalist-macbook-wallpaper-high-quality_30659104.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.215);
+    width: 400px;
+    height: 60px;
+    bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px ;    
+}
+.app{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: 100%;
+    transition: all 0.2s;   
+}
+#n1{
+    background-image: url(Image/toppng.com-notes-icon-ios-7-512x512.png);   
+}
+#n2{
+    background-image: url(Image/music-player.png);
+}
+#n3{
+    background-image: url(Image/html.png);
+}
+
+.app:hover{
+    height: 55px;
+    width: 55px;
+}
+
+.app:active{
+    height: 45px;
+    width: 45px;
+}
+
+.commonApp{
+    background-color: white;
+    height: 70vh;
+    width: 60vw;
+    display: none;
+}
+
+
+.navBar{
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navAppLogo{
+    margin-left: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navControl{
+    margin-right: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.navImg{
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-size: 100%;
+}
+
+#noteImg{
+    background-image: url(Image/toppng.com-notes-icon-ios-7-512x512.png);
+}
+#musicImg{
+    background-image: url(Image/music-player.png);
+}
+
+#codeImg{
+    background-image: url(Image/html.png);
+}
+
+.note{
+    background-color: rgb(77, 77, 77);
+}
+
+
+
+/* app1 css */
+
+.containerApp1{
+    width: 100%;
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    transition: all 2s;
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Playwrite HR Lijeva", cursive;
+    color: white;
+}
+.tools{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    display: none;
+}
+.colorPalate{
+    display: flex;
+    gap: 10px;
+}
+.color div i{
+    font-size: 30px;
+}
+
+.brush{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.range{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dropDown{
+    position: absolute;
+    bottom: -26px;
+    width: 60px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+canvas{
+    margin-top: 30px;
+    border-radius: 2px;
+    background-color: white;
+    height: 72%;
+    width: 90%;
+}
+
+
+
+.color i{
+    cursor: pointer;
+    transition: all 0.5s;
+    filter: drop-shadow(3px 6px 3px rgba(0, 0, 0, 0.315));
+}
+
+.color i:hover{
+    font-size: 35px;
+}
+
+.colorBox{
+    border-radius: 50;
+}
+
+.eraser{
+    height: 30px;
+    width: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(190, 190, 190);
+    filter: drop-shadow(3px 8px 10px black);
+}
+
+.appName{
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.501);
+}
+
+.customColor{
+    background-color: rgb(190, 190, 190);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 110px;
+    filter: drop-shadow(3px 8px 10px black);
+    color: black;
+    position: absolute;
+}
+
+.customColor:hover{
+    background-color:rgb(224, 224, 224) ;
+}
+
+
+.eraser:hover{
+    background-color:rgb(224, 224, 224) ;
+}
+
+
+#colorRange{
+    padding: 0px;
+    border: none;
+    position: relative;
+    left: 4px;
+}
+
+
+.bHeader {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cpImg i {
+    font-size: 50px;
+    font-weight: 100;
+  }
+  .cpContainer {
+    color: white;
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cpContainerContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .headButton {
+    height: 40px;
+    width: 56px;
+    background-color: rgb(68, 72, 87);
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2px;
+    font-size: 12px;
+  }
+  .headButton:hover {
+    background-color: rgb(83, 85, 92);
+  }
+  .cpHeaderButton {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .signUp {
+    background-color: rgb(17, 204, 17);
+    color: black;
+  }
+  .signUp:hover {
+    background-color: rgb(9, 137, 9);
+    color: white;
+  }
+  
+  .change {
+    width: 50px;
+  }
+  .bMain {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+  }
+  .codehead {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bMain {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 4px solid rgb(158, 158, 158);
+  }
+  
+  .code {
+    height: 90%;
+    width: 33%;
+    background-color: rgb(29, 30, 34);
+    margin-bottom: 1rem;
+  }
+  
+  .alingLogo {
+    background-color: rgb(29, 30, 34);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+  }
+  
+  .alingLogo .logo {
+    background: rgb(255, 59, 59);
+    width: 23px;
+    height: 24px;
+    border-radius: 5px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  #css {
+    background-color: rgb(0, 145, 255);
+  }
+  #js {
+    background-color: rgb(255, 255, 35);
+  }
+  
+  textarea {
+    width: 100%;
+    height: 89%;
+    outline: none;
+    border: none;
+    background-color: rgb(29, 30, 34);
+    color: white;
+    padding: 10px;
+    resize: none;
+  }
+  
+ .bFooter{
+      height: 11rem;
+      border-bottom: 5px solid black;
+      background-color: white;
+  } 
+
+  .output{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: white;
+  }
+
+  .fa-expand{
+    cursor: pointer;
+  }
+
+  .fa-xmark{
+    cursor: pointer;
+  }
+/* 
+  music */
+
+  .musiccontainer{
+    background-color: rgba(255, 255, 255, 0.525);
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    background-image: url(Image/peakpx.jpg);
+    background-position: center;
+    background-size: 200%;
+}
+
+.cd{
+    animation: forwards;
+    animation-name: cdrotate;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    height: 200px;
+}
+
+.openButton{
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.audioTime{
+    color: white;
+}
+
+
+@keyframes cdrotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.file{
+    display: none;
+}
+
+.box{
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+
+
+.slider {
+  
+    -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.slider::-webkit-slider-runnable-track {
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+  }
+
+  input[type="range"]::-moz-range-track {
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+  }
+  
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 179, 255);
+    box-shadow: -407px 0 0 400px rgb(0, 179, 255);
+  }
+  
+  
+  .slider::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 179, 255);
+    box-shadow: -407px 0 0 400px rgb(0, 179, 255);
+  }
+  .duration{
+    width: 80%;
+  }
+
+.box:hover{
+    background-color: #ccc;
+}
+
+.musicmain{
+  height: 96%;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
